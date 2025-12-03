@@ -1,21 +1,20 @@
 public class Exercise4_4 {
 
     public static int getNumber() {
-        return 42;
+        return 10;   // değer döndüren metot
     }
 
-    public static void sayHello() {
-        System.out.println("hello");
+    public static void show() {
+        System.out.println("boo!");  // void metot
     }
 
     public static void main(String[] args) {
 
-        // 1) Donus degerini kullanmayin -> ne oluyor?
-        getNumber();
+        // 1. Değer döndüren metodu çağırıp sonucu kullanmazsak?
+        getNumber(); // Derleme hatası yok, sadece sonuç kullanılmaz.
 
-        // 2) void metodu ifade icinde kullanin -> ne oluyor?
-        // System.out.println(sayHello() + 7);
-
-        // Cevaplarinizi yorum olarak ekleyin.
+        // 2. Void metodu bir ifadenin içinde kullanırsak?
+        // Aşağıdaki satır derleme hatası verir çünkü void değer üretmez.
+        // System.out.println(show() + 7);
     }
 }
